@@ -19,7 +19,6 @@ while True:
         if msg_padrao in status.text :
             api.update_status('@botdogalvao Sentiu!',status_id)
             print('replied')
-            i+=1
             time.sleep(30)
     except tweepy.TweepError as e:
         print(e.reason)
