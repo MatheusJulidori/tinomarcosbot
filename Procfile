@@ -1,1 +1,1 @@
-web: python3 tinomarcos.py
+worker: python3 tinomarcos.py
