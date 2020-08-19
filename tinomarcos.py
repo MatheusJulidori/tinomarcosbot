@@ -11,8 +11,6 @@ me = api.me()
 
 msg_padrao = 'Diga lá, Tino!'
 
-i = 0
-j = 0
 while True:
     galvao = api.get_user('1068588022688636934')
     status = galvao.status
@@ -22,7 +20,7 @@ while True:
             api.update_status('@botdogalvao Sentiu!',status_id)
             print('replied')
             i+=1
-            time.sleep(60)
+            time.sleep(30)
     except tweepy.TweepError as e:
         print(e.reason)
-        time.sleep(60)
+        time.sleep(30)
